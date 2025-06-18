@@ -1,0 +1,11 @@
+6+2 = 8
+8^5 = 32768
+3 = Unsupported expression
+Unsupported expression = Unsupported expression
+Unsupported expression = Unsupported expression
+Unsupported expression = Unsupported expression
+2^3 = 8
+8arcsin( = Error: Invalid format for sin: 8arcsin(
+arcsin(30 = Error: Invalid format for sin: arcsin(30
+Error: Invalid format for sin: arcsin(30arcsin( = Error: Invalid format for sin: Error: Invalid format for sin: arcsin(30arcsin(
+arcsin(30) = Error: Invalid format for sin: arcsin(30)
