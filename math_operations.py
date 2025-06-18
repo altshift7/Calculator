@@ -1,24 +1,33 @@
 import math
+from logger import logger 
 
 def evaluate_expression(expression: str) -> str:
     try:
         expression = expression.strip()
+        logger.info(f"Evaluating expression: {expression}")
+        
         if is_basic(expression):
-            return str(eval_basic(expression))
+            result = str(eval_basic(expression))
         elif is_advanced(expression):
-            return str(evaluate_advanced(expression))
+            result = str(evaluate_advanced(expression))
         elif is_permutation_combination(expression):
-            return str(evaluate_permutation_combination(expression))
+            result = str(evaluate_permutation_combination(expression))
         elif is_number_conversion(expression):
-            return str(evaluate_number_conversion(expression))
+            result = str(evaluate_number_conversion(expression))
         elif is_vector_operation(expression):
-            return str(evaluate_vector_operation(expression))
+            result = str(evaluate_vector_operation(expression))
         else:
-            return "Unsupported expression"
-    except Exception as e:
-        return f"Error: {str(e)}"
+            result = "Unsupported expression"
+        
+        logger.info(f"Result: {result}")
+        return result
 
-# === Expression Type Checks ===
+    except Exception as e:
+        error_msg = f"Error: {str(e)}"
+        logger.error(error_msg)
+        return error_msg
+
+# Expression Type Checks
 def is_basic(expr): 
     return any(op in expr for op in "+-*/^") and not is_vector_operation(expr)
 
@@ -36,12 +45,12 @@ def is_number_conversion(expr):
 def is_vector_operation(expr): 
     return any(op in expr for op in ['dot', 'cross', 'magnitude'])
 
-# === Basic Operations ===
+# Basic Operations
 def eval_basic(expr):
     expr = expr.replace("^", "**").replace("π", str(math.pi))
     return eval(expr)
 
-# === Advanced Math ===
+# Advanced Math
 def evaluate_advanced(expr):
     expr = expr.replace("π", str(math.pi))
     if "sin(" in expr:
@@ -84,7 +93,7 @@ def extract_number(expr, func):
         return float(expr[len(prefix):-1])
     raise ValueError(f"Invalid format for {func}: {expr}")
 
-# === Permutation / Combination ===
+# Permutation / Combination
 def evaluate_permutation_combination(expr):
     if 'P' in expr:
         n, r = map(int, expr.split('P'))
@@ -94,7 +103,7 @@ def evaluate_permutation_combination(expr):
         return math.comb(n, r)
     raise ValueError("Invalid P/C expression")
 
-# === Number Conversion ===
+# Number Conversion
 def evaluate_number_conversion(expr):
     expr = expr.lower()
     try:
@@ -108,7 +117,7 @@ def evaluate_number_conversion(expr):
         raise ValueError("Invalid number format")
     raise ValueError("Unsupported number conversion")
 
-# === Vector Operations ===
+# Vector Operations
 def evaluate_vector_operation(expr):
     try:
         if "dot" in expr:

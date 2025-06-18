@@ -1,0 +1,56 @@
+2025-06-18 03:38:06,212 - INFO - Evaluating expression: 
+2025-06-18 03:38:06,213 - INFO - Result: Unsupported expression
+2025-06-18 03:38:07,412 - INFO - Evaluating expression: 
+2025-06-18 03:38:07,412 - INFO - Result: Unsupported expression
+2025-06-18 03:43:51,930 - INFO - Evaluating expression: 
+2025-06-18 03:43:51,931 - INFO - Result: Unsupported expression
+2025-06-18 03:49:01,781 - INFO - Evaluating expression: 2
+2025-06-18 03:49:01,781 - INFO - Result: Unsupported expression
+2025-06-18 03:49:03,974 - INFO - Evaluating expression: 2+
+2025-06-18 03:49:03,974 - ERROR - Error: invalid syntax (<string>, line 1)
+2025-06-18 03:49:05,619 - INFO - Evaluating expression: 2+5
+2025-06-18 03:49:05,619 - INFO - Result: 7
+2025-06-18 03:49:07,063 - INFO - Evaluating expression: 2+5
+2025-06-18 03:49:07,063 - INFO - Result: 7
+2025-06-18 03:49:14,368 - INFO - Evaluating expression: 2+5sin
+2025-06-18 03:49:14,380 - ERROR - Error: invalid decimal literal (<string>, line 1)
+2025-06-18 03:49:18,741 - INFO - Evaluating expression: sin
+2025-06-18 03:49:18,741 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:20,049 - INFO - Evaluating expression: sin3
+2025-06-18 03:49:20,049 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:21,154 - INFO - Evaluating expression: sin30
+2025-06-18 03:49:21,155 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:22,747 - INFO - Evaluating expression: sin30)
+2025-06-18 03:49:22,747 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:24,858 - INFO - Evaluating expression: sin30)
+2025-06-18 03:49:24,858 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:29,162 - INFO - Evaluating expression: sin30
+2025-06-18 03:49:29,162 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:31,184 - INFO - Evaluating expression: sin30
+2025-06-18 03:49:31,184 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:36,468 - INFO - Evaluating expression: sin30sin
+2025-06-18 03:49:36,468 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:38,949 - INFO - Evaluating expression: sin
+2025-06-18 03:49:38,949 - ERROR - Error: Unsupported advanced expression
+2025-06-18 03:49:40,134 - INFO - Evaluating expression: sin(
+2025-06-18 03:49:40,134 - ERROR - Error: Invalid format for sin: sin(
+2025-06-18 03:49:41,929 - INFO - Evaluating expression: sin(3
+2025-06-18 03:49:41,929 - ERROR - Error: Invalid format for sin: sin(3
+2025-06-18 03:49:43,284 - INFO - Evaluating expression: sin(30
+2025-06-18 03:49:43,284 - ERROR - Error: Invalid format for sin: sin(30
+2025-06-18 03:49:44,560 - INFO - Evaluating expression: sin(30)
+2025-06-18 03:49:44,561 - INFO - Result: 0.49999999999999994
+2025-06-18 03:49:46,429 - INFO - Evaluating expression: sin(30)
+2025-06-18 03:49:46,429 - INFO - Result: 0.49999999999999994
+2025-06-18 04:04:25,152 - INFO - Evaluating expression: sin
+2025-06-18 04:04:25,152 - ERROR - Error: Unsupported advanced expression
+2025-06-18 04:04:27,424 - INFO - Evaluating expression: sin(
+2025-06-18 04:04:27,425 - ERROR - Error: Invalid format for sin: sin(
+2025-06-18 04:04:30,090 - INFO - Evaluating expression: sin(3
+2025-06-18 04:04:30,090 - ERROR - Error: Invalid format for sin: sin(3
+2025-06-18 04:04:31,234 - INFO - Evaluating expression: sin(30
+2025-06-18 04:04:31,234 - ERROR - Error: Invalid format for sin: sin(30
+2025-06-18 04:04:32,389 - INFO - Evaluating expression: sin(30)
+2025-06-18 04:04:32,389 - INFO - Result: 0.49999999999999994
+2025-06-18 04:04:34,307 - INFO - Evaluating expression: sin(30)
+2025-06-18 04:04:34,308 - INFO - Result: 0.49999999999999994
